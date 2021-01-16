@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map of Place</title>
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+    <div class="thumbinner">
+        <div id="mapid"
+            style="width: 1080px; height: 700px; border-style: solid; border-width: 1px 0px; border-color: lightgrey; position: relative; outline: none; margin: 1em auto;"
+            class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+            tabindex="0">
+            <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="leaflet-pane leaflet-tile-pane">
+                    <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                        <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 9; transform: translate3d(0px, 0px, 0px) scale(1);">
+                            <img alt="" role="presentation" src="https://pathfinderwiki.com/maps/golarion-tile/tiles/7/56/84" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-230px, -12px, 0px); opacity: 1;">
+                            <img alt="" role="presentation" src="https://pathfinderwiki.com/maps/golarion-tile/tiles/7/57/84" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(26px, -12px, 0px); opacity: 1;">
+                        </div>
+                    </div>
+                    <div class="leaflet-layer " style="z-index: 1; opacity: 0.15;">
+                        <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 9; transform: translate3d(0px, 0px, 0px) scale(2);">
+                            <img alt="" role="presentation" src="https://pathfinderwiki.com/maps/golarion-tile/tiles-relief/6/28/42" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-115px, -134px, 0px); opacity: 1;">
+                        </div>
+                    </div>
+                </div>
+                <div class="leaflet-pane leaflet-shadow-pane"></div>
+                <div class="leaflet-pane leaflet-overlay-pane"></div>
+                <div class="leaflet-pane leaflet-marker-pane"></div>
+                <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                <div class="leaflet-pane leaflet-popup-pane"></div>
+                <div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(14690.9px, 11119.8px, 0px) scale(64);"></div>
+            </div>
+            <div class="leaflet-control-container">
+                <div class="leaflet-top leaflet-left">
+                    <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+                        <a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
+                        <a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
+                    </div>
+                </div>
+                <div class="leaflet-top leaflet-right">
+                    <div class="leaflet-control-scale leaflet-control">
+                        <div class="leaflet-control-scale-line" style="width: 64px;">50 km</div>
+                        <div class="leaflet-control-scale-line" style="width: 61px;">30 mi</div>
+                    </div>
+                </div>
+                <div class="leaflet-bottom leaflet-left"></div>
+                <div class="leaflet-bottom leaflet-right">
+                    <div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com" title="A JS library for interactive maps">
+                        Leaflet</a> | Map data © <a href="https://www.dungeonetics.com/golarion-geography/index.html">John Mechalas</a>, <a href="http://paizo.com/paizo/about/communityuse">Paizo CUP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+        <script src="js/map.js"></script>
+    </div>
+</body>
+</html>
