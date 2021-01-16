@@ -1,10 +1,16 @@
-var mymapid = L.map('mapid').setView([49.9523, -18.6005], 7);
+// SET LOCATION: https://www.dungeonetics.com/golarion-geography/cities.html
+
+// Korvosa
+// let mymapid = L.map('mapid').setView([47.5522, -18.7728], 7);
+
+// Kallow Mounds
+let mymapid = L.map('mapid').setView([49.9523, -18.6005], 7);
 L.tileLayer('https://pathfinderwiki.com/maps/golarion-tile/tiles/{z}/{x}/{y}', {
     tms: true,
     updateWhenIdle: false,
     updateInterval: 50,
     keepBuffer: 4,
-    attribution: 'Map data &copy; <a href="https://www.dungeonetics.com/golarion-geography/index.html">John Mechalas</a>, <a href="http://paizo.com/paizo/about/communityuse">Paizo CUP</a>',
+    attribution: `Map data &copy; <a href="https://www.dungeonetics.com/golarion-geography/index.html">John Mechalas</a>, <a href="http://paizo.com/paizo/about/communityuse">Paizo CUP</a>`,
     maxZoom: 9,
 }).addTo(mymapid);
 

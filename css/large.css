@@ -1,0 +1,9 @@
+@media only screen and (min-width: 62.5em) {
+	main {
+		width: 1000px;
+		margin: 1em auto;
+	}
+	#mapid {
+		height: 700px;
+	}
+}
