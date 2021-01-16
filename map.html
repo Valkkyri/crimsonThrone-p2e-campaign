@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map of Place</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Potta+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/map.css">
 </head>
 <body>
-    <div class="thumbinner">
-        <div id="mapid"
-            style="width: 1080px; height: 700px; border-style: solid; border-width: 1px 0px; border-color: lightgrey; position: relative; outline: none; margin: 1em auto;"
-            class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-            tabindex="0">
+    <main>
+        <h1>Kallow Mounds</h1>
+        <div id="mapid" style="position:relative; outline: none;" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0">
             <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
                 <div class="leaflet-pane leaflet-tile-pane">
                     <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
@@ -54,8 +54,9 @@
                 </div>
             </div>
         </div>
-        <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
-        <script src="js/map.js"></script>
-    </div>
+        Credit: <a href="https://pathfinderwiki.com/wiki/Kallow_Mounds" target="_blank">https://pathfinderwiki.com/wiki/Kallow_Mounds</a>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
